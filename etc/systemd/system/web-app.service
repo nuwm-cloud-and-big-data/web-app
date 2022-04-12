@@ -1,0 +1,12 @@
+[Unit]
+Description=Web App
+
+[Service]
+Type=simple
+WorkingDirectory=/root/web-app
+ExecStart=/usr/bin/python3 main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
